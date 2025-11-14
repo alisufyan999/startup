@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-primary: #0fdac2;
+  --color-dark: #020016;
+  --color-purple: #643bff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-dark: var(--color-dark);
+  --color-purple: var(--color-purple);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-wf: var(--font-wf-visual-sans);
+  --font-graphik: var(--font-graphik-regular);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--color-dark);
+  color: var(--foreground);
+  font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
+}
+
+
+.sectionPadding {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.bottomZero {
+  padding-bottom: 0rem;
+}
+
+/* Apply WF font to all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-wf-visual-sans), sans-serif !important;
+}
+
+/* Ensure headings in all components use WF font */
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
+section h6,
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: var(--font-wf-visual-sans), sans-serif !important;
+}
+
+/* Apply Graphik font to paragraphs, buttons, lists, and other text elements */
+p,
+button,
+a,
+ul,
+ol,
+li,
+span,
+div,
+input,
+textarea,
+select,
+label {
+  font-family: var(--font-graphik-regular), Arial, Helvetica, sans-serif;
+}
+
+/* Prevent layout shifts for headers */
+header {
+  contain: layout style paint;
+  transform: translateZ(0);
+}
+
+/* Optimize image loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Utility classes for EmpoweredTeam and CaseStudy components */
+.sectionPaddingCase {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.tabBgbox {
+  background: rgba(100, 59, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.scroll2 {
+  position: sticky;
+  top: 100px;
+}
+
+.right-column {
+  position: relative;
+}
+
+.hideOnipad {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .hideOnipad {
+    display: none;
+  }
+}
+
+/* Calendly Widget Styles - Show only calendar */
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 650px;
+}
+
+.calendly-inline-widget iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide Calendly branding and header elements */
+.calendly-badge-widget,
+.calendly-header,
+.calendly-popup-content-header {
+  display: none !important;
+}

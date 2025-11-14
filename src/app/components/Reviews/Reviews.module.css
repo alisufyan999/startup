@@ -1,0 +1,306 @@
+.section {
+  background: #110f29;
+  padding: 80px 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(139, 92, 246, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rocketIcon {
+  font-size: 18px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+
+.ctaText {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.badgesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 20px;
+  border-radius: 8px;
+  min-width: 180px;
+  gap: 12px;
+}
+
+.badgeLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+.badge
+{
+    background: #110f29;
+    border: 1px solid #4e4989;
+    color:#fff;
+}
+.trustpilotLogo,
+.googleLogo,
+.facebookLogo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.badgeRating {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.reviewsMasonry {
+  position: relative;
+  z-index: 1;
+  column-count: 3;
+  column-gap: 20px;
+  column-fill: balance;
+}
+
+.reviewCard {
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.reviewCardContent {
+  background: #1a0a2e;
+  border: 1px solid #4e4989;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.videoElement
+{
+    height:300px !important;
+}
+.highlightedCard .reviewCardContent {
+  border: 5px solid #643bff !important;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar span {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.reviewerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.reviewerName {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviewSource {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  margin: 0;
+}
+
+.starRating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.reviewText {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.videoContainer {
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoElement {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .reviewsMasonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .ctaText {
+    font-size: 14px;
+  }
+
+  .badgesContainer {
+    gap: 16px;
+  }
+
+  .badge {
+    min-width: 140px;
+    padding: 12px 20px;
+  }
+
+  .reviewsMasonry {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .subtitleContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ctaText {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .badgesContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .badge {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .reviewCard {
+    padding: 20px;
+  }
+}
+

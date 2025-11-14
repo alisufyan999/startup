@@ -1,0 +1,294 @@
+.contactSection {
+  position: relative;
+  padding: 80px 0;
+  background: #050321;
+  overflow: hidden;
+}
+.client_image
+{
+    max-width: 300px;
+}
+.rocket1
+{
+    position:absolute;
+    top: 0;
+    left: -28px;
+    width: 445px;
+}
+.contactCard {
+  position: relative;
+  background: #1d0e57;
+  border-radius: 24px;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  z-index: 1;
+  background-image: radial-gradient(circle, rgba(15, 218, 194, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+  border: 1px solid rgba(78, 73, 137, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.headingWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.globeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.heading1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.heading2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.accountManagers {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.managerImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(15, 218, 194, 0.3);
+}
+
+.avatarPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #8b5cf6 0%, #0fdac2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.descriptionText {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formHeading {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.highlightText {
+  color: #0fdac2;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.formFieldFull {
+  grid-column: 1 / -1;
+}
+.inputField
+{
+    border-radius:100px;
+}
+.textareaField
+{
+    border-radius: 25px;
+}
+.inputField,
+.textareaField {
+  width: 100%;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: none;
+  font-size: 14px;
+  color: #1a0a2e;
+  font-family: inherit;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.inputField:focus,
+.textareaField:focus {
+  box-shadow: 0 0 0 3px rgba(15, 218, 194, 0.2);
+}
+
+.inputField::placeholder,
+.textareaField::placeholder {
+  color: #6b7280;
+}
+
+.textareaField {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 16px 24px;
+  background: #0fdac2;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 8px;
+}
+
+.submitButton:hover {
+  background: #0bc4a8;
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .contactCard {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 60px 0;
+  }
+
+  .contactCard {
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+
+  .heading1 {
+    font-size: 20px;
+  }
+
+  .heading2 {
+    font-size: 18px;
+  }
+
+  .formHeading {
+    font-size: 24px;
+  }
+
+  .accountManagers {
+    gap: 12px;
+  }
+
+  .managerImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .avatarPlaceholder {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactSection {
+    padding: 40px 0;
+  }
+
+  .contactCard {
+    padding: 24px 20px;
+  }
+
+  .heading1 {
+    font-size: 18px;
+  }
+
+  .heading2 {
+    font-size: 16px;
+  }
+
+  .formHeading {
+    font-size: 20px;
+  }
+
+  .infoContent {
+    gap: 20px;
+  }
+
+  .formContent {
+    gap: 24px;
+  }
+
+  .contactForm {
+    gap: 16px;
+  }
+}
+@media (max-width: 576px)
+{
+    .rocket1
+    {
+        display:none;
+    }
+}

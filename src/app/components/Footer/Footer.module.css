@@ -1,0 +1,172 @@
+.footer {
+  background: #02001c;
+  padding: 60px 0 40px;
+  border-top: 1px solid rgba(78, 73, 137, 0.3);
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 0 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logoGradient {
+  background: linear-gradient(135deg, #8b5cf6 0%, #0fdac2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rocketIcon {
+  font-size: 28px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+
+.logoSubtext {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.socialIcon {
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.rightSection {
+  display: flex;
+  gap: 117px;
+  flex: 1;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 140px;
+}
+.footerlogo
+{
+  max-width:160px;
+}
+.footerLink {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 1.5;
+}
+
+.footerLink:hover {
+  color: #0fdac2;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footerContent {
+    gap: 40px;
+  }
+
+  .rightSection {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .leftSection {
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .linkColumn {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 32px 0 24px;
+  }
+
+  .logoText {
+    font-size: 28px;
+  }
+
+  .rocketIcon {
+    font-size: 24px;
+  }
+
+  .logoSubtext {
+    font-size: 14px;
+  }
+
+  .socialIcons {
+    gap: 12px;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .linkColumn {
+    width: 100%;
+    min-width: auto;
+  }
+}
+

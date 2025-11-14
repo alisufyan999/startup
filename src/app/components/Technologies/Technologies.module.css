@@ -1,0 +1,250 @@
+.section {
+  background: #050321;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, #fff0 0%, #000000 25%, #000000 75%, #fff0 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  width:1000px;
+  margin: 0 auto 30px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Tabs Container */
+.tabsContainer {
+    z-index: 1;
+    background: #020016;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: fit-content;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+}
+
+.tab {
+  padding: 12px 20px;
+  background: transparent;
+  color: #4e4989;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 100px;
+  margin:0 20px 0 13px;
+}
+.tab::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 1px;
+    height: 100%;
+    background: #372c6b;
+}
+.tab:first-child::before {
+   display: none;
+  }
+
+.tab:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.activeTab {
+  background: #8b5cf6;
+  color: #ffffff;
+}
+
+/* Category Header */
+.categoryHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.categoryTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Sliders Container */
+.slidersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* First and Third Slider - Right to Left */
+.sliderRightToLeft .sliderTrack {
+  animation-name: slideRightToLeft;
+  animation-duration: 30s;
+}
+
+/* Second Slider - Left to Right */
+.sliderLeftToRight .sliderTrack {
+  animation-name: slideLeftToRight;
+  animation-duration: 35s;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-33.333%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tool Card */
+.toolCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #1a0a2e;
+  border-radius: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 1px solid 4e4989;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolIcon {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+}
+
+.toolName {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .tabsContainer {
+    flex-direction: column;
+    gap: 0;
+    background:#0b0038;
+    border-radius: 100px;
+  }
+
+  .tab {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+  }
+
+  .tab:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .tab:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+  }
+
+  .categoryTitle {
+    font-size: 20px;
+  }
+
+  .toolCard {
+    padding: 10px 16px;
+  }
+
+  .toolName {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .categoryTitle {
+    font-size: 18px;
+  }
+}
+

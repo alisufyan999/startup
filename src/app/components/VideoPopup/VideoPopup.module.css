@@ -1,0 +1,128 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(2, 0, 22, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popupOverlay.fadeIn {
+  opacity: 1;
+}
+
+.popupContent {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  aspect-ratio: 16 / 9;
+  background: #020016;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(100, 59, 255, 0.3);
+  border: 2px solid rgba(100, 59, 255, 0.3);
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Size variants */
+.sizeSm {
+  max-width: 30rem; /* 480px */
+}
+
+.sizeMd {
+  max-width: 42rem; /* 672px */
+}
+
+.sizeLg {
+  max-width: 56rem; /* 896px */
+}
+
+.sizeXl {
+  max-width: 72rem; /* 1152px */
+}
+
+.sizeXxl {
+  max-width: 90vw;
+}
+
+.popupOverlay.fadeIn .popupContent {
+  transform: scale(1);
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.videoElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.closeButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .popupContent {
+    max-width: 95vw;
+    border-radius: 0.75rem;
+  }
+
+  .closeButton {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
