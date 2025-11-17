@@ -141,14 +141,11 @@ export const PROFESSIONAL_ONLINE = {
     { label: "Content", progress: 70, color: "teal" },
     { label: "Content", progress: 90, color: "purple" },
     { label: "Content", progress: 65, color: "teal" },
-    { label: "Content", progress: 80, color: "purple" },
-    { label: "Content", progress: 75, color: "teal" },
-    { label: "Content", progress: 88, color: "purple" },
+    { label: "Content", progress: 80, color: "purple" }
   ],
   video: {
-    thumbnail: "/assets/images/person-img.webp",
-    overlayText:
-      "Your Smart Marketing AI Team op de e a behind -the-scenes planning promotions, creating visuals.",
+    thumbnail: "/assets/images/man.png",
+    overlayText: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     videoTitle: "Professional Online Video",
   },
@@ -290,7 +287,7 @@ export const REVIEWS_SECTION = {
 export const GROWTH_GUIDES = [
   {
     id: "1",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/1.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -301,7 +298,7 @@ export const GROWTH_GUIDES = [
   },
   {
     id: "2",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/2.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -312,7 +309,7 @@ export const GROWTH_GUIDES = [
   },
   {
     id: "3",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/3.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -323,7 +320,7 @@ export const GROWTH_GUIDES = [
   },
   {
     id: "4",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/1.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -334,7 +331,7 @@ export const GROWTH_GUIDES = [
   },
   {
     id: "5",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/2.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -345,7 +342,7 @@ export const GROWTH_GUIDES = [
   },
   {
     id: "6",
-    image: "/assets/images/hero.webp",
+    image: "/assets/images/blog/3.webp",
     category: "Shopify Agent",
     title: "AI Agents Benefit From Data Quality Validation And More...",
     date: "Nov 10, 2025",
@@ -366,7 +363,7 @@ export const CALENDLY_SECTION = {
     "Book a quick video call to see how your Smart Marketing AI Team can free you to run jobs while your digital presence runs itself",
   buttonText: "Free Up Your Time",
   buttonHref: "/get-started",
-  calendlyUrl: "https://calendly.com/your-username/meeting", // Replace with your actual Calendly URL
+  calendlyUrl: "https://calendly.com/md-hasnain-developer/30min",
   calendlyText:
     "In minutes, you'll see examples of what your team can handle — ads, social, website, graphics — and how it all works together seamlessly",
 };

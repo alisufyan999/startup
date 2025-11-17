@@ -112,7 +112,24 @@
 .calendlyWrapper {
   position: relative;
   width: 100%;
+  min-height: 650px;
   overflow: hidden;
+}
+
+.calendlyWrapper :global(iframe) {
+  width: 100% !important;
+  height: 650px !important;
+  min-height: 650px !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.calendlyWrapper :global(.calendly-inline-widget) {
+  width: 100% !important;
+  height: 650px !important;
+  min-height: 650px !important;
+  display: block !important;
+  visibility: visible !important;
 }
 
 .calendlyWrapper::before {
