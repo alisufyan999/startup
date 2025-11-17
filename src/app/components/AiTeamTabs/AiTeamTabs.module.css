@@ -1,0 +1,22 @@
+.scrollContainer {
+    /* Right panel scrolling box – adjust height if needed */
+    max-height: 640px;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  /* Main UL for stack cards */
+  .stackCards {
+    --stack-cards-gap: 32px; /* space between stacked cards */
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  /* Each card li */
+  .stackCardItem {
+    position: relative;
+    will-change: transform;
+  }
+  

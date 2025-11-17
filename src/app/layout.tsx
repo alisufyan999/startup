@@ -7,6 +7,7 @@ import TopHeader from "./components/TopHeader";
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
 import Container from "./components/Container";
+import "../../public/assets/css/casestudytwo.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
