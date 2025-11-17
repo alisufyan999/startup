@@ -134,25 +134,30 @@
   border: 1px solid #4e4989;
   border-radius: 8px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .videoElement
 {
     height:300px !important;
 }
-.highlightedCard .reviewCardContent {
+/* .highlightedCard .reviewCardContent {
   border: 5px solid #643bff !important;
-}
+} */
 
 .reviewHeader {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+  display: block;
   margin-bottom: 12px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviewHeader::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .avatar {
@@ -160,10 +165,11 @@
   height: 40px;
   border-radius: 50%;
   background: #8b5cf6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: top;
+  margin-right: 12px;
 }
 
 .avatar span {
@@ -173,10 +179,9 @@
 }
 
 .reviewerInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex: 1;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
 }
 
 .reviewerName {
@@ -193,11 +198,19 @@
 }
 
 .starRating {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  flex-shrink: 0;
+  float: right;
   margin-top: 0;
+  margin-left: 12px;
+}
+
+.starRating svg {
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.starRating svg:last-child {
+  margin-right: 0;
 }
 
 .reviewText {
@@ -205,7 +218,9 @@
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
+  margin-top: 12px;
   margin-bottom: 0;
+  display: block;
 }
 
 .videoContainer {

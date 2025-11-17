@@ -33,7 +33,7 @@
 /* Tabs Container */
 .tabsContainer {
     z-index: 1;
-    background: #020016;
+    background: #0b0038;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -48,28 +48,37 @@
     border-radius: 100px;
 }
 
+.tabsContainer .tab:nth-child(2) {
+  margin-left: 2rem;
+}
+
 .tab {
   padding: 12px 20px;
   background: transparent;
-  color: #4e4989;
+  color: #403867;
   border: none;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1.115rem;
+  font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
   border-radius: 100px;
   margin:0 20px 0 13px;
+  min-width: 4rem;
+  letter-spacing: 0.03rem;
 }
 .tab::before
 {
     content: '';
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -16.5px;
     width: 1px;
     height: 100%;
     background: #372c6b;
+}
+.tab:nth-child(2)::before {
+    left: -26px;
 }
 .tab:first-child::before {
    display: none;
@@ -80,8 +89,9 @@
 }
 
 .activeTab {
-  background: #8b5cf6;
+  background: #643bff;
   color: #ffffff;
+  font-weight: 600;
 }
 
 /* Category Header */
@@ -125,7 +135,7 @@
 /* First and Third Slider - Right to Left */
 .sliderRightToLeft .sliderTrack {
   animation-name: slideRightToLeft;
-  animation-duration: 30s;
+  animation-duration: 50s;
 }
 
 /* Second Slider - Left to Right */
@@ -158,11 +168,11 @@
   align-items: center;
   gap: 12px;
   padding: 12px 20px;
-  background: #1a0a2e;
+  background: #120f36;
   border-radius: 8px;
   white-space: nowrap;
   flex-shrink: 0;
-  border: 1px solid 4e4989;
+  border: 1px solid #382972;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -178,8 +188,8 @@
 
 .toolName {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* Responsive Styles */

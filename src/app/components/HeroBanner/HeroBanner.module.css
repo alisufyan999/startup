@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.heading{
+  max-width: 49rem;
+  line-height: 1.2;
+}
+
 @keyframes float {
 
   0%,
