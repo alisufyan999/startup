@@ -30,7 +30,7 @@ const CTABanner = ({
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           {/* Left Side - Question */}
           <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center md:text-left">
               <span className="text-white">{question} </span>
               <span className="text-[#0fdac2]">{questionHighlight}</span>
               <span className="text-white">?</span>

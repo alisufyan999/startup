@@ -41,7 +41,7 @@ export default function FAQ({
                 <div className="flex flex-col items-center gap-8 sm:gap-10 md:gap-12 lg:gap-14">
                     {/* Section Title */}
                     <div className="text-center w-full px-4 sm:px-6">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-extrabold text-white mb-3 sm:mb-4 md:mb-5 leading-tight">
                             <span className="text-white">{sectionData.title.part1}</span>{" "}
                             <span className="text-[#0fdac2]">{sectionData.title.part2}</span>
                         </h2>
