@@ -1,0 +1,49 @@
+.scrollerItem {
+  contain: layout style;
+  will-change: auto;
+}
+
+.tabSection .nav-link {
+  position: relative;
+  padding-left: 0.8125rem;
+}
+
+.tabSection .nav-link:before {
+  content: "";
+  position: absolute;
+  top: 11.52px;
+  left: -2.24px;
+  height: 7.04px;
+  width: 7.04px;
+  background: #261e50;
+  background-image: linear-gradient(to bottom, #9a8dec 0, #7361e5 100%);
+  border-radius: 96px;
+  border-color: rgb(154 141 236 / 1);
+}
+
+@media (max-width: 62rem) {
+  .stack-cards__item {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 36rem) {
+  .stack-cards__item {
+    height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .mobile-padding-bottom-0 {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  section.sectionPaddingCase.pb_8.scrollSectionInner {
+    padding-bottom: 13rem !important;
+  }
+  .pb_8 {
+    padding-bottom: 0rem !important;
+  }
+}

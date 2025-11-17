@@ -21,7 +21,7 @@
 }
 
 .titleGradient {
-  background: linear-gradient(to right, #5d51af, #643bff);
+  background: #0FDAC2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -32,6 +32,13 @@
   width: 100%;
   min-height: 500px;
 }
+
+.heading {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 
 .navButton {
   position: absolute;

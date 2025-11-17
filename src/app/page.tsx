@@ -9,6 +9,7 @@ import ProfessionalOnline from "./components/ProfessionalOnline/ProfessionalOnli
 import CTABanner from "./components/CTABanner/CTABanner";
 import CalendlySection from "./components/CalendlySection/CalendlySection";
 import AiTeamSection from "./components/AiTeamSection/AiTeamSection";
+import CaseStudySection from "./components/CaseStudySection";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       <ProfessionalOnline/>
       <CTABanner/>
       <Technologies />
-      <AiTeamSection />
+      {/* <AiTeamSection /> */}
+      <CaseStudySection />
       <CalendlySection {...CALENDLY_SECTION}/>
       <Reviews />
       <GrowthSlider items={GROWTH_GUIDES} />
